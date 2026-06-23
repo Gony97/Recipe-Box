@@ -2,7 +2,7 @@ import React, { useCallback, useLayoutEffect, useState } from 'react';
 import {
   View, Text, StyleSheet, ScrollView, Image, Pressable, Alert,
 } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { useFocusEffect } from '@react-navigation/native';
 import { colors, space, radius, shadow, fonts, styleForCategory } from '../theme';
 import { dirStyle } from '../utils/rtl';
@@ -65,7 +65,7 @@ export default function RecipeDetailScreen({ route, navigation }) {
       ) : null}
 
       <View style={[styles.catTag, { backgroundColor: cat.color }]}>
-        <Ionicons name={cat.icon} size={14} color={cat.deep} />
+        <MaterialCommunityIcons name={cat.icon} size={15} color={cat.deep} />
         <Text style={[styles.catText, { color: cat.deep }]}>{recipe.category}</Text>
       </View>
 

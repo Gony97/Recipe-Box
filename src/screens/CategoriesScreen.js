@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from 'react';
 import { View, Text, StyleSheet, Pressable, FlatList } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { useFocusEffect } from '@react-navigation/native';
 import { colors, space, radius, shadow, fonts, styleForCategory } from '../theme';
 import { getCategories, countByCategory } from '../db/database';
@@ -29,7 +29,7 @@ export default function CategoriesScreen({ navigation }) {
         onPress={() => navigation.navigate('RecipeList', { category: item })}
       >
         <View style={styles.iconChip}>
-          <Ionicons name={icon} size={22} color={deep} />
+          <MaterialCommunityIcons name={icon} size={24} color={deep} />
         </View>
         <Text style={[styles.tileName, { color: deep }]}>{item}</Text>
         <Text style={[styles.tileCount, { color: deep }]}>

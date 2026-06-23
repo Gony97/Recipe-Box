@@ -40,19 +40,20 @@ export const fonts = {
 };
 
 // Each category: a soft pastel fill, a deeper shade for text/icon on that fill,
-// and an icon. All tones share the same muted, airy pastel character.
+// and a Material Community icon (real food glyphs). All tones share the same
+// muted, airy pastel character.
 export const categoryStyle = {
-  Breakfast: { color: '#FBD9A6', deep: '#B5803A', icon: 'sunny-outline' },
-  Lunch:     { color: '#A7DCC9', deep: '#3E9E84', icon: 'restaurant-outline' },
-  Dinner:    { color: '#B3B5E6', deep: '#5C5FB0', icon: 'moon-outline' },
-  Salads:    { color: '#C2E0A0', deep: '#6F9A3C', icon: 'leaf-outline' },
-  Soups:     { color: '#F6C5A8', deep: '#C0723F', icon: 'cafe-outline' },
-  Cookies:   { color: '#E6CAA6', deep: '#A8803F', icon: 'ellipse-outline' },
-  Cakes:     { color: '#F4C2D8', deep: '#C76F92', icon: 'gift-outline' },
-  Desserts:  { color: '#DEBEEA', deep: '#9A5FB8', icon: 'ice-cream-outline' },
-  Bread:     { color: '#E8CDBE', deep: '#A87C5F', icon: 'pizza-outline' },
-  Drinks:    { color: '#A9D8EC', deep: '#3E8FB8', icon: 'wine-outline' },
-  Other:     { color: '#D6D2E0', deep: '#7A748F', icon: 'apps-outline' },
+  Breakfast: { color: '#FBD9A6', deep: '#B5803A', icon: 'food-croissant' },
+  Lunch:     { color: '#A7DCC9', deep: '#3E9E84', icon: 'food' },
+  Dinner:    { color: '#B3B5E6', deep: '#5C5FB0', icon: 'silverware-fork-knife' },
+  Salads:    { color: '#C2E0A0', deep: '#6F9A3C', icon: 'bowl-mix' },
+  Soups:     { color: '#F6C5A8', deep: '#C0723F', icon: 'pot-steam' },
+  Cookies:   { color: '#E6CAA6', deep: '#A8803F', icon: 'cookie' },
+  Cakes:     { color: '#F4C2D8', deep: '#C76F92', icon: 'cake-variant' },
+  Desserts:  { color: '#DEBEEA', deep: '#9A5FB8', icon: 'cupcake' },
+  Bread:     { color: '#E8CDBE', deep: '#A87C5F', icon: 'bread-slice' },
+  Drinks:    { color: '#A9D8EC', deep: '#3E8FB8', icon: 'glass-cocktail' },
+  Other:     { color: '#D6D2E0', deep: '#7A748F', icon: 'food-variant' },
 };
 
 const palette = [
@@ -71,7 +72,7 @@ export function styleForCategory(name) {
   let hash = 0;
   for (let i = 0; i < name.length; i++) hash = (hash * 31 + name.charCodeAt(i)) >>> 0;
   const p = palette[hash % palette.length];
-  return { ...p, icon: 'pricetag-outline' };
+  return { ...p, icon: 'silverware-variant' };
 }
 
 export const radius = { sm: 14, md: 18, lg: 26, pill: 999 };
