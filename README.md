@@ -39,8 +39,7 @@ There are three ways to use Recipe Box, depending on who you are:
 
 This is the easiest option. The APK is a complete, standalone app — it does **not** need a computer once installed.
 
-> 📥 **Download link:** https://expo.dev/accounts/gonyidan/projects/recipe-box/builds/69c0c92f-f45b-4321-ad13-55f2f33aff57
-
+> 📥 **Download link:** https://expo.dev/accounts/gonyidan/projects/recipe-box/builds/e3e2d9df-a61d-4a62-86a2-08f41a8194e6
 ### Walkthrough for Android users
 
 1. Open the download link **on your Android phone** and download the `.apk` file.
